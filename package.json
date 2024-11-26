@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "client": "vite",
+    "client": "vite --config ./vite.config.ts",
     "server": "npx nodemon ./src/server/server.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
